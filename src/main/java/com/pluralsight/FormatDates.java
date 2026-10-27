@@ -38,6 +38,7 @@ public class FormatDates {
 
         // Another Way: ZonedDateTime is the Java 8 date type that carries a time zone.
         // To try it, remove the comment markers (and comment out the four lines above).
+
         ZonedDateTime nowGmt = ZonedDateTime.now(ZoneId.of("GMT"));
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("EEEE, MMM d, yyyy HH:mm", Locale.ENGLISH);
         String formatted = nowGmt.format(formatter);
